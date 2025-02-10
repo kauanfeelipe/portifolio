@@ -231,7 +231,7 @@ body {
 
 .project h3 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     margin-top: 10px;
 }
 
@@ -355,7 +355,7 @@ footer a:hover img {
     }
 
     .project h3 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .project p {
@@ -411,6 +411,7 @@ footer a:hover img {
     .project img {
         width: 60%;
     }
+
 }  
 
 
@@ -481,7 +482,7 @@ footer a:hover img {
 
 .caroo {
     color: white;
-    font-size: 2.7rem;
+    font-size: 4rem;
     margin-bottom: 20px;
     font-family: 'Georgia', serif;
 }
@@ -523,7 +524,7 @@ footer a:hover img {
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .caroo {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 
     .caroo1 {

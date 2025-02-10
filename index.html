@@ -68,7 +68,7 @@
                     <p>HTML</p>
                 </div>
                 <div class="skill">
-                    <img src="img/css.png" alt="CSS">
+                    <img src="img/novocss.png" alt="CSS">
                     <p>CSS</p>
                 </div>
                 <div class="skill">
@@ -81,6 +81,7 @@
     <section class="projects">
         <div class="container">
             <h2>Projetos</h2>
+            <br>
             <div class="projects-grid">
                 <div class="project">
                     <img src="img/pedrapapel.png" alt="Projeto 1">
@@ -89,6 +90,7 @@
                     <br>
                     <a href="https://game-js-pedra-papel-tesoura.vercel.app/" class="custom-btn">Ver Projeto</a> 
                 </div>
+                <br>
                 <div class="project">
                     <img src="img/dadao.png" alt="Projeto 2">
                     <h3>Jogo Simulador de dados</h3>
@@ -96,6 +98,7 @@
                     <br>
                     <a href="https://projeto-jogo-dados.vercel.app/" class="custom-btn">Ver Projeto</a>
                 </div>
+                <br>
                 <div class="project">
                     <img src="img/calculadora.png" alt="Projeto 2">
                     <h3>Calculadora</h3>
@@ -108,7 +111,7 @@
         </div>
     </section>
     <div class="skill1">
-        <h3 class="caroo">Projeto Web-site Biblioteca Francesa (faculdade)</h3>
+        <h3 class="caroo">Projeto Web-site Biblioteca Francesa</h3>
         <p class="caroo1">Desenvolvido com JAVASCRIPT, NODEJS, MYSQL, HTML, CSS</p>
 
                 <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
@@ -143,7 +146,7 @@
         
         
             <div class="skill1">
-                <h3 class="caroo">Projeto Web-site vendas pra uma construtora. (faculdade)</h3>
+                <h3 class="caroo">Projeto Web-site Simulador de vendas para uma construtora</h3>
                 <p class="caroo1">Desenvolvido com JAVASCRIPT, HTML, CSS</p>
         
               
@@ -183,20 +186,20 @@
                 </div>
             </div>
             <div class="skill1">
-                <h3 class="caroo">Projeto painel de administrção de serviços solicitados.</h3>
+                <h3 class="caroo">Projeto painel de administrção de serviços solicitados</h3>
                 <p class="caroo1">Desenvolvido com JAVASCRIPT, HTML, CSS , NODEJS , MYSQL</p>
         
            
-                <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel"  >
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/pain1.png" class="d-block w-100" alt="Imagem 1">
+                            <img src="img/pain1.png" class="d-block w-100" alt="Imagem 1" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item active">
-                            <img src="img/pain2.png" class="d-block w-100" alt="Imagem 1">
+                            <img src="img/pain2.png" class="d-block w-100" alt="Imagem 1" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item active">
-                            <img src="img/pain3.png" class="d-block w-100" alt="Imagem 1">
+                            <img src="img/pain3.png" class="d-block w-100" alt="Imagem 1" onclick="openModal(this)">
                         </div>
 
 
@@ -215,31 +218,22 @@
         
           
             <div class="skill1">
-                <h3 class="caroo">Projeto controle de disciplina e média escolar (faculdade)</h3>
+                <h3 class="caroo">Projeto controle de disciplina e média escolar</h3>
                 <p class="caroo1">Desenvolvido com JAVASCRIPT, HTML, CSS</p>
         
            
                 <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/azzz.png" class="d-block w-100" alt="Imagem 1">
+                            <img src="img/azzz.png" class="d-block w-100" alt="Imagem 1" onclick="openModal(this)">
                         </div>
 
-
                     </div>
-                 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo</span>
-                    </button>
+
                 </div>
             </div>
             <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-xl">
                     <div class="modal-content">
                         <div class="modal-body">
                             <img id="modalImage" src="" class="img-fluid" alt="Imagem ampliada">
@@ -247,6 +241,17 @@
                     </div>
                 </div>
             </div>
+            <footer>
+                <p>
+                    &copy; 2025 Developer Kauan Felipe
+                    <a href="https://wa.me/16993720553" target="_blank">
+                        <img src="img/whtsn.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://instagram.com/kauanfeelipe/" target="_blank">
+                        <img src="img/instanovo.png" alt="Instagram">
+                    </a>
+                </p>
+            </footer>
             <script>
                 
     function openModal(img) {
@@ -261,16 +266,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <footer>
-        <p>
-            &copy; 2025 Developer Kauan Felipe
-            <a href="https://wa.me/16993720553" target="_blank">
-                <img src="img/whtsn.png" alt="WhatsApp">
-            </a>
-            <a href="https://instagram.com/kauanfeelipe/" target="_blank">
-                <img src="img/instanovo.png" alt="Instagram">
-            </a>
-        </p>
-    </footer>
+
 </body>
 </html>
