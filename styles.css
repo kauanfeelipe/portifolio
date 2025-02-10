@@ -316,8 +316,8 @@ footer p {
     }
 
     .skill img {
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
     }
 
     .skill p {
@@ -376,8 +376,8 @@ footer p {
     }
 
     .skill img {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
     }
 
     .projects h2 {
@@ -416,12 +416,12 @@ footer p {
 
 /* Estilo específico para a imagem do LinkedIn */
 .redes-sociais .linkedin {
-    width: 300px; /* Tamanho padrão para telas maiores */
+    width: 600px; /* Tamanho padrão para telas maiores */
 }
 
 /* Estilo específico para a imagem do GitHub */
 .redes-sociais .github {
-    width: 150px; /* Tamanho padrão para telas maiores */
+    width: 600px; /* Tamanho padrão para telas maiores */
 }
 
 /* Efeito de hover para os links */
@@ -446,7 +446,7 @@ footer p {
 @media (max-width: 480px) {
     .redes-sociais .linkedin,
     .redes-sociais .github {
-        width: 220px; /* Reduz ainda mais o tamanho das imagens */
+        width: 480px; /* Reduz ainda mais o tamanho das imagens */
     }
 }
 
