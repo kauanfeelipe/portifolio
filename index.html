@@ -109,24 +109,24 @@
     </section>
     <div class="skill1">
         <h3 class="caroo">Projeto Web-site Biblioteca Francesa (faculdade)</h3>
-        <p class="caroo1">Desenvolvido com JAVASCRIPT, NODEJS, HTML, CSS</p>
+        <p class="caroo1">Desenvolvido com JAVASCRIPT, NODEJS, MYSQL, HTML, CSS</p>
 
                 <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/bi01.png" class="d-block w-100" alt="Imagem 1">
+                            <img src="img/bi01.png" class="d-block w-100" alt="Imagem 1" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/bi02.png" class="d-block w-100" alt="Imagem 2">
+                            <img src="img/bi02.png" class="d-block w-100" alt="Imagem 2" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/bi03.png" class="d-block w-100" alt="Imagem 3">
+                            <img src="img/bi03.png" class="d-block w-100" alt="Imagem 3" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/bi04.png" class="d-block w-100" alt="Imagem 4">
+                            <img src="img/bi04.png" class="d-block w-100" alt="Imagem 4" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/bi05.png" class="d-block w-100" alt="Imagem 5">
+                            <img src="img/bi05.png" class="d-block w-100" alt="Imagem 5" onclick="openModal(this)">
                         </div>
                     </div>
                    
@@ -150,25 +150,25 @@
                 <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/co1.png" class="d-block w-100" alt="Imagem 1">
+                            <img src="img/co1.png" class="d-block w-100" alt="Imagem 1" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/co2.png" class="d-block w-100" alt="Imagem 2">
+                            <img src="img/co2.png" class="d-block w-100" alt="Imagem 2" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/co3.png" class="d-block w-100" alt="Imagem 3">
+                            <img src="img/co3.png" class="d-block w-100" alt="Imagem 3" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/co4.png" class="d-block w-100" alt="Imagem 4">
+                            <img src="img/co4.png" class="d-block w-100" alt="Imagem 4" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/co5.png" class="d-block w-100" alt="Imagem 5">
+                            <img src="img/co5.png" class="d-block w-100" alt="Imagem 5"onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/co6.png" class="d-block w-100" alt="Imagem 6">
+                            <img src="img/co6.png" class="d-block w-100" alt="Imagem 6" onclick="openModal(this)">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/co7.png" class="d-block w-100" alt="Imagem 7">
+                            <img src="img/co7.png" class="d-block w-100" alt="Imagem 7" onclick="openModal(this)">
                         </div>
                     </div>
                  
@@ -177,6 +177,36 @@
                         <span class="visually-hidden">Anterior</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="skill1">
+                <h3 class="caroo">Projeto painel de administrção de serviços solicitados.</h3>
+                <p class="caroo1">Desenvolvido com JAVASCRIPT, HTML, CSS , NODEJS , MYSQL</p>
+        
+           
+                <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/pain1.png" class="d-block w-100" alt="Imagem 1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="img/pain2.png" class="d-block w-100" alt="Imagem 1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="img/pain3.png" class="d-block w-100" alt="Imagem 1">
+                        </div>
+
+
+                    </div>
+                 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Próximo</span>
                     </button>
@@ -208,6 +238,25 @@
                     </button>
                 </div>
             </div>
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img id="modalImage" src="" class="img-fluid" alt="Imagem ampliada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                
+    function openModal(img) {
+        const modalImage = document.getElementById("modalImage");
+        modalImage.src = img.src;
+        const modal = new bootstrap.Modal(document.getElementById("imageModal"));
+        modal.show();
+    }
+
+            </script>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
