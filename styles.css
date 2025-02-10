@@ -32,8 +32,6 @@ body {
   
   
 
-
-
 .terminal-loader {
     border: 0.1em solid #333;
     background-color: #1a1a1a;
@@ -276,7 +274,6 @@ body {
     left: 0;
 }
 
-/* Estilos para o footer */
 footer {
     background: #333;
     color: #fff;
@@ -284,34 +281,29 @@ footer {
     padding: 10px 0;
 }
 
-/* Estilo para o parágrafo dentro do footer */
 footer p {
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px; /* Espaço entre o texto e as imagens */
+    gap: 30px; 
 }
 
-/* Estilo para as imagens */
 footer img {
-    width: 34px; /* Tamanho das imagens */
+    width: 34px; 
     height: 34px;
-    vertical-align: middle; /* Alinhar verticalmente com o texto */
+    vertical-align: middle; 
 }
 
-/* Estilo para os links */
 footer a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Efeito hover nas imagens */
 footer a:hover img {
-    opacity: 0.8; /* Efeito de transparência ao passar o mouse */
+    opacity: 0.8; 
 }
 
-/* Estilos para telas menores */
 @media (max-width: 768px) {
     .terminal-loader {
       padding: 1em;
@@ -368,7 +360,6 @@ footer a:hover img {
     }
 }
 
-/* Estilos para telas maiores */
 @media (min-width: 1024px) {
     .container {
         max-width: 1400px;
@@ -396,16 +387,16 @@ footer a:hover img {
     }
 
     .skills h2 {
-        font-size: 3.2rem;
+        font-size: 5rem;
     }
 
     .skill img {
-        width: 160px;
-        height: 160px;
+        width: 180px;
+        height: 180px;
     }
 
     .projects h2 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
 
     .project img {
@@ -414,66 +405,88 @@ footer a:hover img {
 
 }  
 
-
-/* Estilo base para o container das redes sociais */
 .redes-sociais {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px; /* Espaço entre as imagens */
+    gap: 80px;
     padding: 1px;
     margin-top: -100px;
 }
 
-/* Estilo base para os links */
+
 .redes-sociais a {
     display: inline-block;
-    transition: transform 0.3s ease; /* Efeito de transição suave */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    transition: transform 0.3s ease; 
+    text-decoration: none; 
 }
 
-/* Estilo base para as imagens */
+
 .redes-sociais img {
     max-width: 100%;
     height: auto;
-    border: none; /* Remove bordas das imagens */
+    border: none; 
 }
 
-/* Estilo específico para a imagem do LinkedIn */
+
 .redes-sociais .linkedin {
-    width: 600px; /* Tamanho padrão para telas maiores */
+    width: 600px; 
 }
 
-/* Estilo específico para a imagem do GitHub */
+
 .redes-sociais .github {
-    width: 600px; /* Tamanho padrão para telas maiores */
+    width: 600px; 
 }
 
-/* Efeito de hover para os links */
+
+.redes-sociais .pdf {
+    width: 600px; 
+}
+
+
 .redes-sociais a:hover {
-    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% ao passar o mouse */
+    transform: scale(1.1); 
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 768px) {
     .redes-sociais {
-        flex-direction: column; /* Coloca as imagens uma abaixo da outra */
-        gap: 10px; /* Reduz o espaço entre as imagens */
+        flex-direction: column; 
+        gap: 10px; 
     }
 
     .redes-sociais .linkedin,
     .redes-sociais .github {
-        width: 250px; /* Reduz o tamanho das imagens para telas menores */
+        width: 250px; 
+    }
+
+
+    .redes-sociais .pdf {
+        width: 300px; 
     }
 }
 
-/* Responsividade para telas muito pequenas (ex: smartphones) */
+
 @media (max-width: 480px) {
     .redes-sociais .linkedin,
     .redes-sociais .github {
-        width: 480px; /* Reduz ainda mais o tamanho das imagens */
+        width: 480px; 
+    }
+
+   
+    .redes-sociais .pdf {
+        width: 200px; 
     }
 }
+
+
+@media (min-width: 769px) {
+    .redes-sociais .pdf {
+        width: 400px; 
+    }
+}
+
+
 
 .skill1 {
     text-align: center;
@@ -493,35 +506,35 @@ footer a:hover img {
     margin-top: 10px;
 }
 
-/* Ajuste do tamanho das imagens no carrossel */
+
 .carousel-item img {
     width: 100%;
     height: auto;
-    max-height: 1200px; /* Ajuste conforme necessário */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    max-height: 1200px; 
+    object-fit: cover; 
 }
 
-/* Estilo personalizado para os controles do carrossel */
+
 .carousel-control-prev,
 .carousel-control-next {
-    width: 5%; /* Largura dos controles */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-    border-radius: 50%; /* Deixa os botões redondos */
-    top: auto; /* Remove o posicionamento vertical padrão */
-    bottom: 10px; /* Posiciona os botões na parte inferior */
-    transform: translateY(0); /* Remove o ajuste vertical */
-    z-index: 1; /* Garante que os controles fiquem acima das imagens */
+    width: 10%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%; 
+    top: auto; 
+    bottom: 10px; 
+    transform: translateY(0); 
+    z-index: 1; 
 }
 
 .carousel-control-prev {
-    left: 10px; /* Distância da borda esquerda */
+    left: 10px; 
 }
 
 .carousel-control-next {
-    right: 10px; /* Distância da borda direita */
+    right: 10px; 
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 768px) {
     .caroo {
         font-size: 2.6rem;
@@ -532,11 +545,11 @@ footer a:hover img {
     }
 
     .carousel-item img {
-        max-height: 320px; /* Reduz a altura das imagens para telas menores */
+        max-height: 320px; 
     }
 
     .carousel-control-prev,
     .carousel-control-next {
-        width: 10%; /* Aumenta a largura dos controles em telas menores */
+        width: 10%; 
     }
 }
