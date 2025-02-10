@@ -15,9 +15,9 @@ body {
     50% {
       border-right-color: transparent;
     }
-  }
-  
-  @keyframes typeAndDelete {
+}
+
+@keyframes typeAndDelete {
     0%, 10% {
       width: 0;
     }
@@ -27,9 +27,9 @@ body {
     90%, 100% {
       width: 0;
     }
-  }
-  
-  .terminal-loader {
+}
+
+.terminal-loader {
     border: 0.1em solid #333;
     background-color: #1a1a1a;
     color: #0f0;
@@ -42,9 +42,9 @@ body {
     overflow: hidden;
     box-sizing: border-box;
     text-align: center;
-  }
-  
-  .terminal-header {
+}
+
+.terminal-header {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,97 +55,79 @@ body {
     border-top-right-radius: 8px;
     padding: 0 0.4em;
     box-sizing: border-box;
-  }
-  
-  .terminal-controls {
+}
+
+.terminal-controls {
     float: right;
-  }
-  
-  .control {
+}
+
+.control {
     display: inline-block;
     width: 0.6em;
     height: 0.6em;
     margin-left: 0.4em;
     border-radius: 50%;
     background-color: #777;
-  }
-  
-  .control.close {
+}
+
+.control.close {
     background-color: #e33;
-  }
-  
-  .control.minimize {
+}
+
+.control.minimize {
     background-color: #ee0;
-  }
-  
-  .control.maximize {
+}
+
+.control.maximize {
     background-color: #0b0;
-  }
-  
-  .terminal-title {
+}
+
+.terminal-title {
     float: left;
     line-height: 1.5em;
     color: #eee;
-  }
-  
-  .container {
+}
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 2em auto;
-  }
-  
-  .animated-text {
+}
+
+.animated-text {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.2em solid green; /* Cursor */
-    animation:
-      typeText 4s steps(20) forwards, /* Texto digitando */
-      blinkCursor 0.75s step-end infinite alternate;
+    border-right: 0.2em solid green;
+    animation: typeText 4s steps(20) forwards, blinkCursor 0.75s step-end infinite alternate;
     font-size: 4rem;
     color: #0f0;
     margin-top: 20px;
-  }
-  .subtitle {
+}
+
+.subtitle {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     font-size: 1.9rem;
     color: #0f0;
     margin-top: 10px;
-  }
-  
-  @keyframes typeText {
+}
+
+@keyframes typeText {
     from {
       width: 0;
     }
     to {
       width: 100%;
     }
-  }
-  
-  @keyframes blinkCursor {
+}
+
+@keyframes blinkCursor {
     50% {
       border-color: transparent;
     }
-  }
-  /* Estilos para telas menores */
-@media (max-width: 768px) {
-    .terminal-loader {
-      padding: 1em;
-      font-size: 0.9em;
-    }
-  
-    .animated-text {
-      font-size: 2.3rem;
-    }
-  
-    .subtitle {
-      font-size: 1.5rem;
-    }
-  }
-  
-
+}
 
 .about {
     text-align: center;
@@ -168,7 +150,7 @@ body {
     font-family: 'Georgia', serif; 
 }
 
-.para{
+.para {
     font-size: 2.4rem; 
     max-width: 800px;
     margin: 0 auto;
@@ -177,7 +159,6 @@ body {
 }
 
 .skills {
-   
     padding: 1px 0;
     text-align: center;
 }
@@ -250,7 +231,6 @@ body {
 }
 
 .custom-btn {
-    
     padding: 20px;
     font-size: 25px;
     outline: none;
@@ -262,9 +242,9 @@ body {
     display: inline-block;
     text-decoration: none;
     overflow: hidden;
-  }
-  
-  .custom-btn::before {
+}
+
+.custom-btn::before {
     content: 'Ver Projeto'; 
     position: absolute;
     top: -15%;
@@ -278,13 +258,12 @@ body {
     justify-content: center;
     transition: 0.15s ease-in-out;
     font-weight: bold;
-  }
-  
-  .custom-btn:hover::before {
+}
+
+.custom-btn:hover::before {
     top: 0;
     left: 0;
-  }
-  
+}
 
 footer {
     background: #333;
@@ -297,9 +276,20 @@ footer p {
     font-size: 1rem;
 }
 
+/* Estilos para telas menores */
 @media (max-width: 768px) {
-    
-    
+    .terminal-loader {
+      padding: 1em;
+      font-size: 0.9em;
+    }
+
+    .animated-text {
+      font-size: 2.3rem;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+    }
 
     .profile-photo {
         width: 150px;
@@ -309,8 +299,6 @@ footer p {
     .about h2 {
         font-size: 2rem;
     }
-
-
 
     .skills h2 {
         font-size: 2.5rem;
@@ -338,7 +326,177 @@ footer p {
     .project p {
         font-size: 1.3rem;
     }
-    .para{
-        font-size:1.9rem ;
+
+    .para {
+        font-size: 1.9rem;
+    }
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .terminal-loader {
+        font-size: 1.1em;
+    }
+
+    .animated-text {
+        font-size: 4.5rem;
+    }
+
+    .profile-photo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+    }
+
+    .para {
+        font-size: 2.6rem;
+    }
+
+    .skills h2 {
+        font-size: 3.2rem;
+    }
+
+    .skill img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .projects h2 {
+        font-size: 3rem;
+    }
+
+    .project img {
+        width: 60%;
+    }
+}  
+
+
+/* Estilo base para o container das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px; /* Espaço entre as imagens */
+    padding: 1px;
+}
+
+/* Estilo base para os links */
+.redes-sociais a {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Efeito de transição suave */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+/* Estilo base para as imagens */
+.redes-sociais img {
+    max-width: 100%;
+    height: auto;
+    border: none; /* Remove bordas das imagens */
+}
+
+/* Estilo específico para a imagem do LinkedIn */
+.redes-sociais .linkedin {
+    width: 300px; /* Tamanho padrão para telas maiores */
+}
+
+/* Estilo específico para a imagem do GitHub */
+.redes-sociais .github {
+    width: 150px; /* Tamanho padrão para telas maiores */
+}
+
+/* Efeito de hover para os links */
+.redes-sociais a:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .redes-sociais {
+        flex-direction: column; /* Coloca as imagens uma abaixo da outra */
+        gap: 10px; /* Reduz o espaço entre as imagens */
+    }
+
+    .redes-sociais .linkedin,
+    .redes-sociais .github {
+        width: 200px; /* Reduz o tamanho das imagens para telas menores */
+    }
+}
+
+/* Responsividade para telas muito pequenas (ex: smartphones) */
+@media (max-width: 480px) {
+    .redes-sociais .linkedin,
+    .redes-sociais .github {
+        width: 220px; /* Reduz ainda mais o tamanho das imagens */
+    }
+}
+
+.skill1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.caroo {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.caroo1 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+/* Ajuste do tamanho das imagens no carrossel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 1200px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Estilo personalizado para os controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Largura dos controles */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    border-radius: 50%; /* Deixa os botões redondos */
+    top: auto; /* Remove o posicionamento vertical padrão */
+    bottom: 10px; /* Posiciona os botões na parte inferior */
+    transform: translateY(0); /* Remove o ajuste vertical */
+    z-index: 1; /* Garante que os controles fiquem acima das imagens */
+}
+
+.carousel-control-prev {
+    left: 10px; /* Distância da borda esquerda */
+}
+
+.carousel-control-next {
+    right: 10px; /* Distância da borda direita */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .caroo {
+        font-size: 2rem;
+    }
+
+    .caroo1 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item img {
+        max-height: 320px; /* Reduz a altura das imagens para telas menores */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%; /* Aumenta a largura dos controles em telas menores */
     }
 }
