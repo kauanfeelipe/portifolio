@@ -276,15 +276,39 @@ body {
     left: 0;
 }
 
+/* Estilos para o footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 1px 0;
+    padding: 10px 0;
 }
 
+/* Estilo para o parágrafo dentro do footer */
 footer p {
-    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espaço entre o texto e as imagens */
+}
+
+/* Estilo para as imagens */
+footer img {
+    width: 34px; /* Tamanho das imagens */
+    height: 34px;
+    vertical-align: middle; /* Alinhar verticalmente com o texto */
+}
+
+/* Estilo para os links */
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Efeito hover nas imagens */
+footer a:hover img {
+    opacity: 0.8; /* Efeito de transparência ao passar o mouse */
 }
 
 /* Estilos para telas menores */
