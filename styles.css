@@ -35,7 +35,7 @@ body {
 .terminal-loader {
     border: 0.1em solid #333;
     background-color: #1a1a1a;
-    color: #0f0;
+    color: rgb(24, 24, 238);
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
     padding: 1.5em 1em;
@@ -101,10 +101,10 @@ body {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.2em solid green;
+    border-right: 0.2em solid rgb(24, 24, 238);
     animation: typeText 4s steps(20) forwards, blinkCursor 0.75s step-end infinite alternate;
     font-size: 4rem;
-    color: #0f0;
+    color: rgb(24, 24, 238);;
     margin-top: 20px;
 }
 
@@ -113,7 +113,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     font-size: 1.9rem;
-    color: #0f0;
+    color: rgb(24, 24, 238);;
     margin-top: 10px;
 }
 
